@@ -1,0 +1,84 @@
+/* 重置样式 */
+html { overflow-y: scroll; }
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li, pre,fieldset, lengend, button, input, textarea,th, td {
+    margin: 0;
+    padding: 0;
+
+}
+body,button, input, select, textarea { 
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; 
+}
+h1 { font-size: 18px;  }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+img { border: none; } 
+.clear{
+	clear: both;
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu,main{display:block}
+body{
+	background: url(../images/bg.png) repeat-x #f7f7f7;
+}
+main{
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+/*banner*/
+.banner{ width:980px; height:300px; position:relative; } 
+.banner .pic{}
+.banner .pic ul{}
+.banner .pic ul li{}
+.banner .pic ul li img{ /*opacity:0;*/ display:none;}
+.banner .pic ul li.active img{ /*opacity:1;*/ display:block;}
+.banner .icon{ position:absolute; width:auto; bottom:-24px; right:0px; left: 0; z-index:2;}
+.banner .icon ul{ text-align:center; font-size:0;}
+.banner .icon ul li{ display:inline-block; *display:inline; *zoom:1; margin:0 4px; width:14px; height:14px; background:#ccc; border-radius:50%; cursor:pointer;}
+.banner .icon ul li.on{ background:#5b0303;}
+.banner .btn{ display:none;}
+.banner .btn .prev,.btn .next{width:40px; height:40px;  position:absolute; bottom:45%;  background:red; opacity:0.4; cursor:pointer; z-index: 999;}
+.banner .btn .prev{left:0; background: url(../images/prev.png) no-repeat;}
+.banner .btn .next{right:0; background: url(../images/next.png) no-repeat;}
+.banner .txt{position:absolute; left:0px; bottom:0px; height:40px; background:#000; opacity:0.5; z-index:1; width: 100%;}
+.banner .txt ul{}
+.banner .txt ul li{ text-indent:2em; display:none; }
+.banner .txt ul li a{ font:14px/40px "微软雅黑"; color:#fff; }
+.banner .txt ul li a:hover{ color:#a40605;}
+.banner .txt ul li.show{ display:block;}
+.title{
+	margin-bottom: 6px;
+	height: 32px;
+	border-bottom: 1px solid #5b0303;
+	background: url(../images/titBg.png) no-repeat left bottom;
+}
+ .title h2{
+	float: left;
+	width: 104px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+ .title h2 a{
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 16px; 
+	color: #fff;   
+}
+ .title h2 a:hover{
+	color: #f00;	
+}
+ .title .more{
+	display: block;
+	font-family: arial;
+	float: right;
+	color: #2556ad;	
+	line-height: 32px;
+	margin-right: 10px;
+}	
+ .title .more:hover {
+	color: #f00;
+}
